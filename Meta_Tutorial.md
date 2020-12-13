@@ -142,7 +142,7 @@ sudo apt-get install software-properties-common
 sudo apt-get install g++ cmake libicu-dev git libjemalloc-dev zlib1g-dev
 ```
 
-Now need to make sure that we use gcc/g++-7 and not the newer version that is installed by default on the system.  
+Now need to make sure that we use gcc/g++-7 and not the newer version that is installed by default on the system.  (You may want to remove these links after you are finished successfully building MeTa).  1  
 
 ```
 sudo ln -s /usr/bin/gcc-7 /usr/local/bin/gcc
@@ -151,16 +151,58 @@ sudo ln -s /usr/bin/g++-7 /usr/local/bin/g++
 ```
 Now quit and restart the linux beta terminal window.
 
-Since the repository for the icu4c files has changed since the MeTa package was created, we will need to manually download the file.  
+Now lets download the MeTa files:
+```
+# clone the project
+git clone https://github.com/meta-toolkit/meta.git
+cd meta/
 
-Download the "icu4c-58_2-src.tgz" file from here:
+# set up submodules
+git submodule update --init --recursive
+
+# set up a build directory
+mkdir build
+cd build
+cp ../config.toml .
+```
+
+Since the repository for the icu4c files has changed since the MeTa package was created, we will need to manually download the file and place it in the right directory for the build process to pick up.  
+
+```
+#create the necessary directory for icu 58-2
+mkdir deps
+mkdir icu.58-2
+```
+
+
+Now we need to download the "icu4c-58_2-src.tgz" file from here:
 [Github icu4c 58-2 page](https://github.com/unicode-org/icu/releases/tag/release-58-2)
 
 [(direct link to file)](https://github.com/unicode-org/icu/releases/download/release-58-2/icu4c-58_2-src.tgz)
 
+Now copy the file to the icu58-2 directory you created above.
+
+The MeTa source uses xlocale.h, which is no longer included in many current linux distributions.  We can use locale.h instead, so will link it to there:
+```
+# link xlocale.h to locale.h
+sudo ln -s /usr/include/locale.h /usr/local/include/xlocale.h
+```
+
+Now we'll configure the Makefile with cmake, and then make the project:
+
+```
+# configure and build the project
+cmake ../ -DCMAKE_BUILD_TYPE=Release
+make
+```
+
+You can now test the system by running the following command:
+```
+./unit-test --reporter=spec
+```
+If everything passes, congratulations! MeTA seems to be working on your system.
 
 
-Download the icu
 
 ## Ubuntu Build Guide
 
