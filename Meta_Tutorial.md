@@ -123,7 +123,7 @@ system.
 
 ## Chromebook Build Guide
 
-Recently released Chromebooks (in the last couple of years as of December 2020) have a option to run a linux beta.  MeTa can be built on these Chromebooks.  Check here for a list of compatible Chromebooks:  [https://www.chromium.org/chromium-os/chrome-os-systems-supporting-linux][https://www.chromium.org/chromium-os/chrome-os-systems-supporting-linux]
+Recently released Chromebooks (in the last couple of years as of December 2020) have a option to run a linux beta.  MeTa can be built on these Chromebooks.  Check here for a list of compatible Chromebooks:  [https://www.chromium.org/chromium-os/chrome-os-systems-supporting-linux](https://www.chromium.org/chromium-os/chrome-os-systems-supporting-linux)
 
 ## Ubuntu Build Guide
 
