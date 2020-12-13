@@ -19,6 +19,7 @@ about MeTA!
     - [Tutorials](#tutorials)
     - [Citing](#citing)
 - [Project Setup](#project-setup)
+    - [Generic Setup Notes](#generic-setup-notes)
     - [Mac OS X](#mac-os-x-build-guide)
     - [Chromebook](#Chromebook-build-guide)
     - [Ubuntu](#ubuntu-build-guide)
@@ -27,7 +28,6 @@ about MeTA!
     - [CentOS](#centos-build-guide)
     - [EWS/EngrIT](#ewsengrit-build-guide) (this is UIUC-specific)
     - [Windows](#windows-build-guide)
-    - [Generic Setup Notes](#generic-setup-notes)
 
 # Intro
 
