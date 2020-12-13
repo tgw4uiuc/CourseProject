@@ -156,7 +156,7 @@ Next lets download the MeTa files:
 ```
 # clone the project
 git clone https://github.com/meta-toolkit/meta.git
-cd meta/
+cd meta
 
 # set up submodules
 git submodule update --init --recursive
@@ -169,30 +169,25 @@ cp ../config.toml .
 
 Since the repository for the icu4c files has changed since the MeTa package was created, we will need to manually download the file and place it in the right directory for the build process to pick up.  
 
-```
-#create the necessary directory for icu 58-2
-mkdir deps
-mkdir icu.58-2
-```
-
-
 Now we need to download the "icu4c-58_2-src.tgz" file from here:
 [Github icu4c 58-2 page](https://github.com/unicode-org/icu/releases/tag/release-58-2)
 
 [(direct link to file)](https://github.com/unicode-org/icu/releases/download/release-58-2/icu4c-58_2-src.tgz)
 
-Now copy the file to the icu58-2 directory you created above.
+Now copy the file from your download location to the correct directory.  Copy it to the meta/deps/icu-58.2/ directory (create those directories if they don't exist yet)
 
-The MeTa source uses xlocale.h, which is no longer included in many current linux distributions.  We can use locale.h instead, so will link it to there:
+Next, the MeTa source uses xlocale.h, which is no longer included in many current linux distributions.  We can use locale.h instead, so will link it to there:
 ```
 # link xlocale.h to locale.h
 sudo ln -s /usr/include/locale.h /usr/local/include/xlocale.h
 ```
 
-Now we'll configure the Makefile with cmake, and then make the project:
+Now we'll configure move back to the build directory, configure the Makefile with cmake, and then make the project:
 
 ```
 # configure and build the project
+cd ..
+(make sure you are in the meta/build/ directory)
 cmake ../ -DCMAKE_BUILD_TYPE=Release
 make
 ```
