@@ -131,18 +131,35 @@ If your Chromebook is compatible, see this page to turn on the linux beta mode:
 
 Once you have Linux Beta installed and working, these are the steps to install Meta:
 ```
-***Need gcc/g++-7, gcc/g++-8 or later will not work
+#Need gcc/g++-7, gcc/g++-8 or later will not work
 sudo apt-get install gcc-7 g++-7
 
-***next update the system and get needed files
+#next update the system and get needed files
 sudo apt-get update
 sudo apt-get install software-properties-common
 
-
-***install dependencies
+#install dependencies
 sudo apt-get install g++ cmake libicu-dev git libjemalloc-dev zlib1g-dev
+```
+
+Now need to make sure that we use gcc/g++-7 and not the newer version that is installed by default on the system.  
+
+```
+sudo ln -s /usr/bin/gcc-7 /usr/local/bin/gcc
+
+sudo ln -s /usr/bin/g++-7 /usr/local/bin/g++
+```
+Now quit and restart the linux beta terminal window.
+
+Since the repository for the icu4c files has changed since the MeTa package was created, we will need to manually download the file.  
+
+Download the "icu4c-58_2-src.tgz" file from here:
+[Github icu4c 58-2 page](https://github.com/unicode-org/icu/releases/tag/release-58-2)
+[(direct link to file)](https://github.com/unicode-org/icu/releases/download/release-58-2/icu4c-58_2-src.tgz)
 
 
+
+Download the icu
 
 ## Ubuntu Build Guide
 
