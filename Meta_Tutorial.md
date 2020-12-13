@@ -20,6 +20,7 @@ about MeTA!
     - [Citing](#citing)
 - [Project Setup](#project-setup)
     - [Mac OS X](#mac-os-x-build-guide)
+    - [Chromebook](#Chromebook-build-guide)
     - [Ubuntu](#ubuntu-build-guide)
     - [Arch Linux](#arch-linux-build-guide)
     - [Fedora](#fedora-build-guide)
@@ -119,6 +120,10 @@ You can now test the system by running the following command:
 
 If everything passes, congratulations! MeTA seems to be working on your
 system.
+
+## Chromebook Build Guide
+
+Test of chromebook
 
 ## Ubuntu Build Guide
 
