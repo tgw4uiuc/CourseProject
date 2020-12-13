@@ -155,6 +155,7 @@ Since the repository for the icu4c files has changed since the MeTa package was 
 
 Download the "icu4c-58_2-src.tgz" file from here:
 [Github icu4c 58-2 page](https://github.com/unicode-org/icu/releases/tag/release-58-2)
+
 [(direct link to file)](https://github.com/unicode-org/icu/releases/download/release-58-2/icu4c-58_2-src.tgz)
 
 
