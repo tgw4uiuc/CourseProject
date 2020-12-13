@@ -125,6 +125,25 @@ system.
 
 Recently released Chromebooks (in the last couple of years as of December 2020) have a option to run a linux beta.  MeTa can be built on these Chromebooks.  Check here for a list of compatible Chromebooks:  [https://www.chromium.org/chromium-os/chrome-os-systems-supporting-linux](https://www.chromium.org/chromium-os/chrome-os-systems-supporting-linux)
 
+If your Chromebook is compatible, see this page to turn on the linux beta mode:
+
+[Chomebook Linux Beta Mode](https://support.google.com/chromebook/answer/9145439)
+
+Once you have Linux Beta installed and working, these are the steps to install Meta:
+```
+***Need gcc/g++-7, gcc/g++-8 or later will not work
+sudo apt-get install gcc-7 g++-7
+
+***next update the system and get needed files
+sudo apt-get update
+sudo apt-get install software-properties-common
+
+
+***install dependencies
+sudo apt-get install g++ cmake libicu-dev git libjemalloc-dev zlib1g-dev
+
+
+
 ## Ubuntu Build Guide
 
 The directions here depend greatly on your installed version of Ubuntu. To
