@@ -132,6 +132,7 @@ If your Chromebook is compatible, see this page to turn on the linux beta mode:
 Once you have Linux Beta installed and working, these are the steps to install Meta:
 ```
 #Need gcc/g++-7, gcc/g++-8 or later will not work
+sudo apt-get update
 sudo apt-get install gcc-7 g++-7
 
 #next update the system and get needed files
@@ -139,10 +140,10 @@ sudo apt-get update
 sudo apt-get install software-properties-common
 
 #install dependencies
-sudo apt-get install g++ cmake libicu-dev git libjemalloc-dev zlib1g-dev
+sudo apt-get install cmake libicu-dev git libjemalloc-dev zlib1g-dev
 ```
 
-Now need to make sure that we use gcc/g++-7 and not the newer version that is installed by default on the system.  (You may want to remove these links after you are finished successfully building MeTa).  1  
+Now we need to make sure that we use gcc/g++-7 and not the newer version that is installed by default on the system.  (You may want to remove these links after you are finished successfully building MeTa).
 
 ```
 sudo ln -s /usr/bin/gcc-7 /usr/local/bin/gcc
@@ -151,7 +152,7 @@ sudo ln -s /usr/bin/g++-7 /usr/local/bin/g++
 ```
 Now quit and restart the linux beta terminal window.
 
-Now lets download the MeTa files:
+Next lets download the MeTa files:
 ```
 # clone the project
 git clone https://github.com/meta-toolkit/meta.git
