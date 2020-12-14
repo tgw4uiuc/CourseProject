@@ -9,6 +9,7 @@
 -specific sections of this, and the note regarding python 2.7 and
 -3.4-3.7 being easier to use, the rest was created by the
 -previous tutorial author(s).
+```
 
 This project provides Python (2.7 and 3.x are supported) bindings for the
 MeTA toolkit. They are still very much under construction, but the goal is
