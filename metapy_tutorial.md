@@ -4,12 +4,11 @@
 
 [![Windows Build Status](https://ci.appveyor.com//api/projects/status/github/meta-toolkit/metapy?svg=true&branch=master)](https://ci.appveyor.com/project/skystrife/metapy)
 
-======
-Author tgw4's note regarding attribution:  I created the OS specific sections of this, and the note regarding python 2.7 and 3.4-3.7 being easier to use, the rest was created by the previous tutorial author(s).
-======
-<div class="text-purple">
-  This text is purple
-</div>
+```diff
+-Author tgw4's note regarding attribution:  I created the OS
+-specific sections of this, and the note regarding python 2.7 and
+-3.4-3.7 being easier to use, the rest was created by the
+-previous tutorial author(s).
 
 This project provides Python (2.7 and 3.x are supported) bindings for the
 MeTA toolkit. They are still very much under construction, but the goal is
