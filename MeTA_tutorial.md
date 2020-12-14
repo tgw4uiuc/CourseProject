@@ -711,7 +711,7 @@ If everything passes, congratulations! MeTA seems to be working on your
 system.
 
 
-#Older versions of CentOS:
+# Older versions of CentOS:
 
 MeTA can be built in CentOS 7 and above. CentOS 7 comes with a recent
 enough compiler (GCC 4.8.5), but too old a version of CMake. We'll thus
