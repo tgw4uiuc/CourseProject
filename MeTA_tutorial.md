@@ -654,7 +654,7 @@ You can now test the system with the following command:
 
 ## CentOS Build Guide
 
-#CentOS 8.2.2004
+# CentOS 8.2.2004
 
 The first step is to install gcc/g++ 7.5.0 (or any version between 4.8.5 and 7.5.0, inclusive).  MeTa won't compile properly with gcc 8.0 or higher.
 
@@ -674,6 +674,7 @@ git submodule update --init --recursive
 mkdir build
 cd build
 cp ../config.toml .
+```
 
 Since the repository for the icu4c files has changed since the MeTa package was created, we will need to manually download the file and place it in the right directory for the build process to pick up.  
 
@@ -685,6 +686,7 @@ Now we need to download the "icu4c-58_2-src.tgz" file from here:
 Now copy the file from your download location to the correct directory.  Copy it to the meta/deps/icu-58.2/ directory (create those directories if they don't exist yet)
 
 Next, the MeTa source uses xlocale.h, which is no longer included in many newer linux distributions.  We can use locale.h instead, so we will link it to there:
+
 ```
 # link xlocale.h to locale.h
 sudo ln -s /usr/include/locale.h /usr/local/include/xlocale.h
@@ -693,7 +695,7 @@ sudo ln -s /usr/include/locale.h /usr/local/include/xlocale.h
 Now we'll configure move back to the build directory, configure the Makefile with cmake, and then make the project:
 
 
-
+```
 # configure and build the project
 cmake ../ -DCMAKE_BUILD_TYPE=Release
 make
