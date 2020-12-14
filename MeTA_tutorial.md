@@ -20,7 +20,7 @@ about MeTA!
 - Ubuntu 20.04 LTS
 - CentOS 8.2.2004
 - And also added the icu4c and xlocale.h info to the "Generic Setup Notes" as well as some general editing and reordering.
-- The rest was created by the previous tutorial author(s).
+- The rest was created by the previous tutorial author(s) who created https://github.com/meta-toolkit/metapy/blob/master/README.md.
 ```
 
 
