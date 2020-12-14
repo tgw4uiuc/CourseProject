@@ -8,7 +8,7 @@
 - Author tgw4's note regarding attribution:  I created the OS
 - specific sections of this, and the note regarding python 2.7 and
 - 3.4-3.7 being easier to use, the rest was created by the
-- previous tutorial author(s).
+- previous tutorial author(s) who created https://github.com/meta-toolkit/metapy/blob/master/README.md.
 ```
 
 This project provides Python (2.7 and 3.x are supported) bindings for the
