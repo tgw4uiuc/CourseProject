@@ -111,6 +111,30 @@ That's it, metapy is now installed.
 
 # Ubuntu Setup
 # Version 20.04 LTS
+
+Ubuntu 20.04 LTS comes wiht python 3.8 installed, which will not make it easy to install metapy.
+
+## The easy way: (using a previous version of python)
+Install python version 3.4 through 3.7 from [python.org](python.org).  Make python3.7 your active version.  See the instructions here for help switching versions:
+[https://linuxconfig.org/ubuntu-20-04-python-version-switch-manager](https://linuxconfig.org/ubuntu-20-04-python-version-switch-manager)
+
+
+Now install pip:
+```
+#install pip
+sudo apt-get install python3-pip
+
+#update pip
+pip3 install --upgrade pip
+
+#install metapy
+pip3 install metapy
+```
+That's it, metapy is now installed!
+
+
+## The hard way: (sticking with python 3.8)
+
 First lets update the list of packages available to install:
 ```
 #update package lists
