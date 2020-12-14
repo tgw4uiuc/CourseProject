@@ -109,7 +109,8 @@ That's it, metapy is now installed.
 
 
 
-### Ubuntu 20.04 LTS
+# Ubuntu 20.04 LTS
+First lets update the list of packages available to install:
 '''
 #update package lists
 sudo apt update
@@ -152,7 +153,7 @@ Once its completed, that's it, metapy is now installed.
 
 
 
-##CENTOS 8.2.2004
+#  CENTOS 8.2.2004
 
 Centos is quite easy, as python 3.6 and pip are installed by 
 default.
@@ -172,7 +173,7 @@ sudo pip3 install metapy
 That's it, you now have metapy installed!
 
 
-##Windows-10
+#  Windows-10
 First, be sure to have python version 2.7 or 3.4-3.7 installed.
 
 To check if python is installed, open a command prompt window an type:
