@@ -22,10 +22,10 @@ library.
 #Outline
 - [Generic Instructions](#Generic-setup-notes)
 - [OS Specific Instructions](#OS-specific-instructions)
-    - [Chromebook](#Chromebook)
-    - [Ubuntu 20.04LTS](#Ubuntu)
-    - [CentOS 8.2.2004](#CentOS)
-    - [Windows 10](#Windows-10)
+    - [Chromebook](#Chromebook-Setup)
+    - [Ubuntu 20.04LTS](#Ubuntu-Setup)
+    - [CentOS 8.2.2004](#CentOS-Setup)
+    - [Windows 10](#Windows-10-Setup)
 
 Note that metapy will be much easier to install in python verisons 2.7 or 3.4 through 3.7, while later versions require compiling all the source code.
 
@@ -75,9 +75,9 @@ to have multiple versions installed by specifying
 
 The module should be written to `metapy.so` in the build directory.
 
-#  OS specific instructions
+#  OS Specific Instructions
 
-#  Chromebook
+#  Chromebook Setup
 Recently released Chromebooks (in the last couple of years as of December 2020) have a option to run a linux beta.  Metapy can be installed on these Chromebooks.  Check here for a list of compatible Chromebooks:  [https://www.chromium.org/chromium-os/chrome-os-systems-supporting-linux](https://www.chromium.org/chromium-os/chrome-os-systems-supporting-linux)
 
 If your Chromebook is compatible, see this page to turn on the linux beta mode:
@@ -88,7 +88,7 @@ Once you have Linux Beta installed and working, these are the steps to install m
 
 Open a linux terminal then:
 
-'''
+```
 #update package lists
 sudo apt-get update
 
@@ -109,10 +109,10 @@ That's it, metapy is now installed.
 
 
 
-# Ubuntu
+# Ubuntu Setup
 # Version 20.04 LTS
 First lets update the list of packages available to install:
-'''
+```
 #update package lists
 sudo apt update
 
@@ -154,7 +154,7 @@ Once its completed, that's it, metapy is now installed.
 
 
 
-#  CentOS
+#  CentOS Setup
 #  Version 8.2.2004
 
 Centos is quite easy, as python 3.6 and pip are installed by 
@@ -175,7 +175,7 @@ sudo pip3 install metapy
 That's it, you now have metapy installed!
 
 
-#  Windows 10
+#  Windows 10 Setup
 First, be sure to have python version 2.7 or 3.4-3.7 installed.
 
 To check if python is installed, open a command prompt window an type:
