@@ -19,7 +19,7 @@ about MeTA!
 - Chromebook
 - Ubuntu 20.04 LTS
 - CentOS 8.2.2004
-- and also some general editing and reordering.
+- And also added the icu4c and xlocale.h info to the "Generic Setup Notes" as well as some general editing and reordering.
 - The rest was created by the previous tutorial author(s).
 ```
 
@@ -108,8 +108,8 @@ The Ubuntu 20.04 LTS, Centos 8.2.2004, and Chromebook sections were updated in D
 
 Now copy the file from your download location to the correct directory where you've downloaded the MeTa source.  Copy it to the meta/deps/icu-58.2/ directory (create those deps and icu-58.2 directories if they don't exist yet.)
 
-One other thing that may cause issuesin newer OS distributions:
-Next, the MeTa source uses xlocale.h, which is no longer included in many newer OS distributions.  We can use locale.h instead, so this will link it to there:
+One other thing that may cause issues in newer OS distributions:
+The MeTa source uses xlocale.h, which is no longer included in many newer OS distributions.  We can use locale.h instead, so this will link it to there:
 ```
 # link xlocale.h to locale.h
 sudo ln -s /usr/include/locale.h /usr/local/include/xlocale.h
