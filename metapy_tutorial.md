@@ -24,7 +24,7 @@ library.
 - [OS Specific Instructions](#OS-specific-instructions)
     - [Chromebook](#Chromebook)
     - [Ubuntu 20.04LTS](#Ubuntu-20.04-LTS)
-    - [CentOS 8.2.2004](#Centos-8.2.2004)
+    - [CentOS 8.2.2004](#CentOS-8.2.2004)
     - [Windows 10](#Windows-10)
 
 Note that metapy will be much easier to install in python verisons 2.7 or 3.4 through 3.7, while later versions require compiling all the source code.
@@ -153,7 +153,7 @@ Once its completed, that's it, metapy is now installed.
 
 
 
-#  CENTOS 8.2.2004
+#  CentOS 8.2.2004
 
 Centos is quite easy, as python 3.6 and pip are installed by 
 default.
@@ -173,7 +173,7 @@ sudo pip3 install metapy
 That's it, you now have metapy installed!
 
 
-#  Windows-10
+#  Windows 10
 First, be sure to have python version 2.7 or 3.4-3.7 installed.
 
 To check if python is installed, open a command prompt window an type:
