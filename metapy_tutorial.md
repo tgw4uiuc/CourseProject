@@ -42,7 +42,7 @@ pip install metapy
 
 This should work on Linux, OS X, and Windows with pretty much any recent
 Python version >= 2.7. On Linux, make sure to update your `pip` to version
-8.1 so you can install from a binary package---this will save you a lot of
+8.1 (or newer) so you can install from a binary package---this will save you a lot of
 time.
 
 ## Compiling it yourself
