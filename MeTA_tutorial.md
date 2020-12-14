@@ -263,6 +263,7 @@ supported (even by your vendor!) and you should upgrade to at least 12.04
 LTS (or 14.04 LTS, if possible).
 
 ### Ubuntu 20.04 LTS Build Guide
+Update the list of available packages, and then install gcc-7, g++-7 and other prerequisites.
 
 ```
 sudo apt update
@@ -287,6 +288,7 @@ mkdir build
 cd build
 cp ../config.toml .
 
+```
 Since the repository for the icu4c files has changed since the MeTa package was created, we will need to manually download the file and place it in the right directory for the build process to pick up.  
 
 Now we need to download the "icu4c-58_2-src.tgz" file from here:
@@ -305,9 +307,11 @@ sudo ln -s /usr/include/locale.h /usr/local/include/xlocale.h
 Now we'll configure move back to the build directory, configure the Makefile with cmake, and then make the project:
 
 
+```
+# configure and build the project, make sure we're using gcc/g++ version 7
 
-# configure and build the project
-cmake ../ -DCMAKE_BUILD_TYPE=Release
+cmake ../ -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=gcc-7 -DCMAKE_CXX_COMPILER=g++-7
+
 make
 ```
 
