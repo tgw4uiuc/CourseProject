@@ -13,6 +13,17 @@ about MeTA!
   [![Windows Build
   Status](https://ci.appveyor.com//api/projects/status/github/meta-toolkit/meta?svg=true&branch=develop)](https://ci.appveyor.com/project/skystrife/meta)
 
+```diff
+- Author tgw4's note regarding attribution:  I created the 
+- following OS specific sections of this tutorial:
+- Chromebook
+- Ubuntu 20.04 LTS
+- CentOS 8.2.2004
+- and also some general editing and reordering.
+- The rest was created by the previous tutorial author(s).
+```
+
+
 # Outline
 - [Intro](#intro)
     - [Documentation](#documentation)
@@ -253,14 +264,11 @@ Based on what you see, you should proceed with one of the following guides:
 
 - [Ubuntu 20.04 LTS Build Guide](#ubuntu-2004-lts-build-guide)
 
-Older Ubuntu Versions (no longer supported)
+Older Ubuntu Versions (no longer supported, instructions remain for reference purposes)
 - [Ubuntu 15.10 Build Guide](#ubuntu-1510-build-guide)
 - [Ubuntu 14.04 LTS Build Guide](#ubuntu-1404-lts-build-guide)
 - [Ubuntu 12.04 LTS Build Guide](#ubuntu-1204-lts-build-guide)
 
-If your version is less than 12.04 LTS, your operating system is not
-supported (even by your vendor!) and you should upgrade to at least 12.04
-LTS (or 14.04 LTS, if possible).
 
 ### Ubuntu 20.04 LTS Build Guide
 Update the list of available packages, and then install gcc-7, g++-7 and other prerequisites.
