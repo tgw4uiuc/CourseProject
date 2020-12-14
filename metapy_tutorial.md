@@ -23,8 +23,8 @@ library.
 - [Generic Instructions](#Generic-setup-notes)
 - [OS Specific Instructions](#OS-specific-instructions)
     - [Chromebook](#Chromebook)
-    - [Ubuntu 20.04LTS](#Ubuntu-20.04-LTS)
-    - [CentOS 8.2.2004](#CentOS-8.2.2004)
+    - [Ubuntu 20.04LTS](#Ubuntu)
+    - [CentOS 8.2.2004](#CentOS)
     - [Windows 10](#Windows-10)
 
 Note that metapy will be much easier to install in python verisons 2.7 or 3.4 through 3.7, while later versions require compiling all the source code.
