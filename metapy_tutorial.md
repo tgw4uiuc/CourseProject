@@ -109,7 +109,8 @@ That's it, metapy is now installed.
 
 
 
-# Ubuntu 20.04 LTS
+# Ubuntu
+# Version 20.04 LTS
 First lets update the list of packages available to install:
 '''
 #update package lists
@@ -153,7 +154,8 @@ Once its completed, that's it, metapy is now installed.
 
 
 
-#  CentOS 8.2.2004
+#  CentOS
+#  Version 8.2.2004
 
 Centos is quite easy, as python 3.6 and pip are installed by 
 default.
