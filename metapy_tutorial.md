@@ -5,10 +5,10 @@
 [![Windows Build Status](https://ci.appveyor.com//api/projects/status/github/meta-toolkit/metapy?svg=true&branch=master)](https://ci.appveyor.com/project/skystrife/metapy)
 
 ```diff
--Author tgw4's note regarding attribution:  I created the OS
--specific sections of this, and the note regarding python 2.7 and
--3.4-3.7 being easier to use, the rest was created by the
--previous tutorial author(s).
+- Author tgw4's note regarding attribution:  I created the OS
+- specific sections of this, and the note regarding python 2.7 and
+- 3.4-3.7 being easier to use, the rest was created by the
+- previous tutorial author(s).
 ```
 
 This project provides Python (2.7 and 3.x are supported) bindings for the
@@ -19,16 +19,17 @@ to make it seamless to use MeTA's components within any Python application
 This project is made possible by the excellent [pybind11][pybind11]
 library.
 
+#Outline
+- [Generic Instructions](#Generic-setup-notes)
 - [OS Specific Instructions](#OS-specific-instructions)
-    - [General Instructions](#General-setup-notes)
     - [Chromebook](#Chromebook)
     - [Ubuntu 20.04LTS](#Ubuntu-20.04-LTS)
     - [CentOS 8.2.2004](#Centos-8.2.2004)
     - [Windows 10](#Windows-10)
 
+Note that metapy will be much easier to install in python verisons 2.7 or 3.4 through 3.7, while later versions require compiling all the source code.
 
-
-## Getting setup notes
+# Generic setup notes
 (the easy way)
 
 ```bash
@@ -74,9 +75,9 @@ to have multiple versions installed by specifying
 
 The module should be written to `metapy.so` in the build directory.
 
-###OS specific instructions
+#  OS specific instructions
 
-##Chromebook
+#  Chromebook
 Recently released Chromebooks (in the last couple of years as of December 2020) have a option to run a linux beta.  Metapy can be installed on these Chromebooks.  Check here for a list of compatible Chromebooks:  [https://www.chromium.org/chromium-os/chrome-os-systems-supporting-linux](https://www.chromium.org/chromium-os/chrome-os-systems-supporting-linux)
 
 If your Chromebook is compatible, see this page to turn on the linux beta mode:
